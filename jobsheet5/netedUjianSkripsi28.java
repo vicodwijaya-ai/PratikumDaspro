@@ -7,12 +7,12 @@ public class netedUjianSkripsi28 {
         Scanner sc = new Scanner(System.in);
 
         String pesan;
-        System.out.println("Apakah mahasiswa sudah bebas kompen (Ya/Tidak):");
+        System.out.print("Apakah mahasiswa sudah bebas kompen (Ya/Tidak):");
         String bebasKompen = sc.nextLine().trim();
 
-        System.out.println("Masukan jumblah log bimbingan Pembimbing 1:");
+        System.out.print("Masukan jumblah log bimbingan Pembimbing 1:");
         int bimbinganP1 = sc.nextInt();
-        System.out.println("Masukan jumblah log bimbingan Pembimbing 2:");
+        System.out.print("Masukan jumblah log bimbingan Pembimbing 2:");
         int bimbinganP2 = sc.nextInt();
 
         if (bebasKompen.equalsIgnoreCase("Ya")) {
@@ -25,7 +25,9 @@ public class netedUjianSkripsi28 {
             } else {
                 pesan = "Gagal! Log bimbingan P2 belum mencapai 4 kali ";
             }
-            System.out.println(pesan);
+        } else {
+            pesan = "Gagal! Mahasiswa masih memiliki tanggungan kompen";
         }
+            System.out.println(pesan);
     }
 }
