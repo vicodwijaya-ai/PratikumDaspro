@@ -10,11 +10,14 @@ public class ifCetakKRS28 {
         System.out.println("Apakah UKT sudah lunas? (true/false)");
         boolean uktLunas = sc.nextBoolean();
 
-        if (uktLunas) {
+        if (uktLunas == true) {
             System.out.println("Pembayaran UKT terverifikasi");
             System.out.println("Silakan cetak KRS dan minta tanda tangan DPA");
-            
+        } else {
+            System.out.println("Pembayaran UKT belum terverifikasi");
+            System.out.println("Silakan lakukan pembayaran UKT terlebih dahulu");
 
+            sc.close();
         }
     }
 }
