@@ -1,5 +1,3 @@
-package jobsheet5;
-
 import java.util.Scanner;
 
 public class ifCetakKRS28 {
@@ -10,14 +8,17 @@ public class ifCetakKRS28 {
         System.out.println("Apakah UKT sudah lunas? (true/false)");
         boolean uktLunas = sc.nextBoolean();
 
-        if (uktLunas == true) {
-            System.out.println("Pembayaran UKT terverifikasi");
-            System.out.println("Silakan cetak KRS dan minta tanda tangan DPA");
-        } else {
-            System.out.println("Pembayaran UKT belum terverifikasi");
-            System.out.println("Silakan lakukan pembayaran UKT terlebih dahulu");
+        // if (uktLunas) {
+        //     System.out.println("Pembayaran UKT terverifikasi");
+        //     System.out.println("Silakan cetak KRS dan minta tanda tangan DPA");
+        // } else {
+        //     System.out.println("Pembayaran UKT belum terverifikasi");
+        //     System.out.println("Silakan lakukan pembayaran UKT terlebih dahulu");
 
-            sc.close();
-        }
+        //     sc.close();
+        // }
+
+        String pesan = (uktLunas) ? "Pembayaran UKT terverifikasi\nSilakan cetak KRS dan minta tanda tangan DPA" : "Pembayaran UKT belum terverifikasi\nSilakan lakukan pembayaran UKT terlebih dahulu";
+        System.out.println(pesan);
     }
 }
