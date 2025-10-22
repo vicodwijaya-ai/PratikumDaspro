@@ -21,7 +21,7 @@ public class SiakadFor28 {
             }
 
         }
-        System.out.println("Nilai tertinggi " + tertinggi);
-        System.out.println("Nilai terendah " + terendah);
+        System.out.println("Nilai tertinggi : " + tertinggi );
+        System.out.println("Nilai terendah  : " + terendah );
     }
 }
