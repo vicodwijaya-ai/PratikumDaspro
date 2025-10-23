@@ -18,9 +18,10 @@ public class SiakadWhile28 {
                 System.out.println("Nilai tidak valid. Masukan lagi nilai yang valid!");
                 continue;
             }
-
+            
             if (nilai > 80 && nilai <= 100) {
-               System.out.println("Nilai mahasiswa ke-" + (i + 1) + "adalah A"); 
+                System.out.println("Nilai mahasiswa ke-" + (i + 1) + "adalah A");
+                System.out.println("Mahasiswa mendapatkan nilai A : " + "Bagus "); 
             } else if (nilai > 73 && nilai <= 80) {
                System.out.println("Nilai mahasiswa ke-" + (i + 1) + "adalah B+");
             } else if (nilai > 65 && nilai <= 73) {
@@ -35,6 +36,9 @@ public class SiakadWhile28 {
                 System.out.println("Nilai mahasiswa ke-" + (i + 1) + "adalah E");
             }
             i++;
+
+           
+            }
         }
     }
-}
+
