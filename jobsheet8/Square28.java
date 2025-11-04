@@ -11,11 +11,11 @@ public class Square28 {
         System.out.print("Masukkan nilai N = ");
         int n = sc.nextInt();
         for (int iOuter = 1; iOuter <= n; iOuter++) {
-            for (int i = 1; i <= n; i++) {
+            for (int i = 0; i <= n; i++) {
                 System.out.print("*");
 
             }
-            System.out.println();
+            // System.out.println();
         }
     }
 }
